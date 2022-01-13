@@ -13,13 +13,13 @@ steps:
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
-    azureResourceManagerConnection: 'ARMTemplateConnection'
-    subscriptionId: '28b2a0e6-67a2-44e3-9705-dea6aaba40f4'
+    azureResourceManagerConnection: 'TespipelineARMConnection'
+    subscriptionId: '9933e43a-2340-4e68-8cc5-762a3c14cc25'
     action: 'Create Or Update Resource Group'
-    resourceGroupName: 'PipeTest_RG'
+    resourceGroupName: 'DEVOPS-RG'
     location: 'East US'
     templateLocation: 'URL of the file'
     csmFileLink: 'https://raw.githubusercontent.com/paframX/demopipelineblob/master/template.json'
     csmParametersFileLink: 'https://raw.githubusercontent.com/paframX/demopipelineblob/master/parameters.json'
     deploymentMode: 'Incremental'
-    deploymentName: 'BlobDemoRun'
+    deploymentName: 'TestPipelineBlobRun'
