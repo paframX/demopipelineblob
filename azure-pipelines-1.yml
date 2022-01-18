@@ -13,6 +13,7 @@ steps:
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'TespipelineARMConnection'
     subscriptionId: '9933e43a-2340-4e68-8cc5-762a3c14cc25'
     action: 'Create Or Update Resource Group'
     resourceGroupName: 'DEVOPS-RG'
@@ -21,4 +22,4 @@ steps:
     csmFileLink: 'https://raw.githubusercontent.com/paframX/vnetpipelinerun/master/template%20(2).json'
     csmParametersFileLink: 'https://raw.githubusercontent.com/paframX/vnetpipelinerun/master/parametersFile%20(1).json'
     deploymentMode: 'Incremental'
-    deploymentName: 'TestVNETRUN'
+    deploymentName: 'TestVNETRun'
