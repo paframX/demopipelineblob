@@ -16,7 +16,7 @@ steps:
     azureResourceManagerConnection: 'TespipelineARMConnection'
     subscriptionId: '9933e43a-2340-4e68-8cc5-762a3c14cc25'
     action: 'Create Or Update Resource Group'
-    resourceGroupName: 'DEVOPS-RG'
+    resourceGroupName: 'DevLabA'
     location: 'East US'
     templateLocation: 'URL of the file'
     csmFileLink: 'https://raw.githubusercontent.com/paframX/demopipelineblob/master/template.json'
